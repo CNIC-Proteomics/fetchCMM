@@ -14,7 +14,7 @@ app.use(cors());
 
 // Routing
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('Fetch CMM API')
 })
 
 app.post('/get_cmm', async (req, res) => {
