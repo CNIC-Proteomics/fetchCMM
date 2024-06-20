@@ -18,7 +18,6 @@ app.get('/', (req, res) => {
 })
 
 app.post('/get_cmm', async (req, res) => {
-
     const resCMM = await new Promise(res => {
         fetch(
             CMM_URI,
@@ -36,5 +35,5 @@ app.post('/get_cmm', async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`fetchCMM app listening on port ${port}`)
 })
