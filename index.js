@@ -6,7 +6,7 @@ const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch
 // Constants
 const app = express()
 const port = process.env.PORT || 8000
-const CMM_URI = "http://ceumass.eps.uspceu.es/mediator/api/v3/batch";
+const CMM_URI = "https://ceumass.eps.uspceu.es/mediator/api/v3/batch";
 
 // Middlewares
 app.use(express.json());
